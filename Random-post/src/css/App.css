@@ -1,0 +1,12 @@
+.body {
+    background-image: url(../assets/img/Jowhareh_galleries_poster_e46d875e-83c9-42ce-a448-a8f293a8bf7f.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}

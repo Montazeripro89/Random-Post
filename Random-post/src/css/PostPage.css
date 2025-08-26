@@ -1,0 +1,38 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    user-select: none;
+}
+
+.box {
+    width: 45vw;
+    height: 55vh;
+    background-color: rgba(128, 196, 255, 0.822);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4vw;
+    padding: 2vw;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 1vw;
+    box-sizing: border-box;
+}
+
+.box:hover {
+    transform: translate(0vw , -1vw);
+    scale: 1.025;
+}
+
+.btn {
+    width: 4vw;
+    height: 2vw;
+    cursor: pointer;
+}
+
+.btnsBox {
+    display: flex;
+    gap: 2vw;
+}

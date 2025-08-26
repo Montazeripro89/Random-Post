@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Vazir';
+  src: url(../assets/font/Vazir.ttf);
+}
+
+* {
+  font-family: 'Vazir';
+  margin: 0%;
+}
