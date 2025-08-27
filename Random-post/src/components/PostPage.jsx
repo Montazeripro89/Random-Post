@@ -46,19 +46,33 @@ function PostPage() {
             setPost("No posts left!");
         }
     }
-
+            
     function editPost() {
         let editInput = prompt('Enter tour text:').trim();
+        let thatPost = posts.find(item => item.para === post);
         let isItrepetitive = posts.some(item => item.para === editInput)
 
-        if(!isItrepetitive) {
-            let thatPost = posts.find(item => item.para === post);
-            thatPost.para = editInput;
-            setPost(editInput);
+        if (editInput !== '') {
+            continueTheEdit();
         }else {
-            alert('نوشته شما تکراری بوده و یا دیگر توسط کامپیوتر یافت نمی شود!');
-            console.log('{isItsrepetive} || {!thatPost}');
-        }   
+            alert('لطفاً مقداری را تعیین کنید!')
+        }
+
+
+        function continueTheEdit () {
+
+            if (!isItrepetitive) {
+                if (thatPost) {
+                    thatPost.para = editInput;
+                    setPost(editInput);
+                } else {
+                    alert('چنین پستی یافت نشد!')
+                }
+            }else {
+                alert('مقدار وارد شده تکراری است!');
+            }
+
+        }
     }
 
     function copyPost() {
